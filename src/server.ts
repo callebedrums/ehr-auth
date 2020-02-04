@@ -4,8 +4,8 @@ import morgan from 'morgan';
 import cors from 'cors';
 
 import { Server } from '@overnightjs/core';
-import { PatientController } from './patient.controller';
-import { ObservationController } from './observation.controller';
+import { FHIRController } from './fhir/fhir.controller';
+import { AuthController } from './auth/auth.controller';
 
 export class EHRAuthServer extends Server {
 
@@ -37,8 +37,8 @@ export class EHRAuthServer extends Server {
         });
 
         super.addControllers([
-            new PatientController(),
-            new ObservationController()
+            new FHIRController(),
+            new AuthController()
         ]);
     }
 

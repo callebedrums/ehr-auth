@@ -7,6 +7,14 @@
   "rules": {
     "trailing-comma": [
       false
+    ],
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
     ]
   },
   "rulesDirectory": []
