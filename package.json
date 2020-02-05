@@ -21,9 +21,12 @@
   "license": "ISC",
   "dependencies": {
     "@overnightjs/core": "^1.6.12",
+    "@overnightjs/jwt": "^1.1.15",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
@@ -31,6 +34,8 @@
     "@types/body-parser": "^1.17.1",
     "@types/cors": "^2.8.6",
     "@types/express": "^4.17.2",
+    "@types/express-jwt": "0.0.42",
+    "@types/jsonwebtoken": "^8.3.7",
     "@types/mocha": "^7.0.1",
     "@types/morgan": "^1.7.37",
     "@types/node": "^13.7.0",

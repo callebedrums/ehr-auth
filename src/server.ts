@@ -12,6 +12,8 @@ export class EHRAuthServer extends Server {
     constructor() {
         super();
 
+        this.app.set('view engine', 'ejs');
+
         this.app.use(bodyParser.urlencoded({ extended: true }));
         this.app.use(bodyParser.json());
 

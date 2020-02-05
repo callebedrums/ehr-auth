@@ -10,7 +10,7 @@ import { Request, Response } from "express";
 ])
 export class FHIRController {
 
-    @Get('.well-known/smart-configuration.json')
+    @Get('.well-known/smart-configuration')
     getSmartConfiguration(req: Request, res: Response) {
         return this.getMetadata(req, res);
     }

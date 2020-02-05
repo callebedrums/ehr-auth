@@ -1,7 +1,9 @@
-import { Controller, Get } from "@overnightjs/core";
+import { Controller, Get, ClassMiddleware } from "@overnightjs/core";
 import { Request, Response } from "express";
+import { authenticationMiddleware } from "../auth/jwt";
 
 @Controller('Patient')
+@ClassMiddleware([authenticationMiddleware])
 export class PatientController {
 
     @Get(':id')
