@@ -103,6 +103,7 @@ export class AuthController {
         const clientSecret = authorization[1] || '';
         let payload: any;
 
+        // TODO - implement refresh token
         if (req.body.grant_type !== 'authorization_code') {
             return res.status(400).json({ message: 'invalid grant_type parameter' });
         }
